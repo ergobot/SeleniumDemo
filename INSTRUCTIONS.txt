@@ -1,0 +1,55 @@
+INSTRUCTIONS: (README)
+
+What is this?
+- Selenium demo for desktop browsers.  The browsers covered are Firefox, Chrome, and Internet Explorer.
+- There are three demos.
+	1. SingleBrowser - Only running a single browser.
+	2. SimpleRemoteWebDriver - Using the minimum code to run two browsers using Selenium Grid/RemoteWebDriver.
+	3. ParallelDemo - Using Selenium Grid/RemoteWebDriver to run 5 browsers at the same time.
+
+--Important--
+What was I using when I made this?
+
+If your system setup is different than this, you may have some configuration todo that is not covered here.
+I have also this configuration setup on Win 8.1/IE 11.  
+
+OS: Windows 7 Pro x64
+Language: Java
+Browsers:
+	Chrome: V31
+	Firefox: 26
+	Internet Explorer: 10
+
+Before starting:
+	1. Make a folder at "C:\Selenium"
+	2. In the project, go to the libs folder and copy:
+			chromedriver_win32.zip (x64 or x86 this file is the same), 
+			IEDriverServer_x64_2.38.0.zip (get the version you need), and 
+			selenium-server-standalone-2.38.0.jar
+		to the directory "C:\Selenium".  Unzip the contents of all zip files.
+		
+		These files were provided so the demo was an all-in-one demo.  If you want the latest version or some other version, they can be found at:
+		https://code.google.com/p/selenium/downloads/list
+		
+		One note on the IEDriverServer.exe needed for InternetExplorer.  Get the version (x64 or x86) that you need.
+		
+	3. There are three batch files locaed in the root of the project:
+		startHub.bat - This is the hub, you only need one.
+		startNodeChrome.bat - This is the chrome node.
+		startNodeFirefox.bat - This is the firefox node.
+		startNodeInternetExplorer.bat - This is the InternetExplorer node.
+		
+		You can start the hub once, then start the other three nodes at the same time.  
+		
+		You only need the hub and nodes running when using the demos in the packages: 
+		com.demo.ParallelDemo 
+		com.demo.SimpleRemoteWebDriver
+		
+	4. If this is the first time running the ChromeDriver or InternetExplorerDriver, the windows fire wall prompt you when you run execute the first run.  This has to do with IEDriverServer.exe and the ChromeServer.exe.  Click on "Allow Access".
+		
+		
+	5. There is additional configuration required for Internet Explorer. Please see the following post:
+			
+
+
+

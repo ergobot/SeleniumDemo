@@ -1,0 +1,2 @@
+cd C:\Selenium
+java -jar .\selenium-server-standalone-2.38.0.jar -role node -port 8989 -browser "browserName=internet explorer,version=10,maxInstances=25,platform=WINDOWS" -hub http://localhost:4444/grid/register -Dwebdriver.ie.driver=C:\Selenium\IEDriverServer.exe
