@@ -49,7 +49,8 @@ Before starting:
 		
 		
 	5. There is additional configuration required for Internet Explorer. Please see the following post:
-			
+	http://techvalleyprojects.blogspot.com/2013/12/selenium-internet-explorer-configuration.html
+	
 
 
 
